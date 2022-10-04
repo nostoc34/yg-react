@@ -222,7 +222,49 @@ p {
 
 /* Yönetim Slider */
 
+.yon-title {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
 .yon-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.yon-box-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.yon-item {
+    justify-content: center;
+    align-items: center;
+}
+
+.yon-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.yonetim {
+    margin: 1rem 16rem;
+    box-shadow: 0px 3px 8px #ed4c20;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+
+/* .yon-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -232,7 +274,7 @@ p {
 .yon-box-2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin: 2rem 9rem;
 }
 
@@ -253,7 +295,7 @@ p {
 
 
 .yon-img {
-    width: 150px;
+    width: 100px;
     height: auto;
     border-radius: 50%;
     margin-bottom: 1rem;
@@ -277,6 +319,7 @@ p {
 @media all and (max-width: 1400px) {
     .yon-box {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         margin: 2rem 2rem;
     }
 
@@ -313,7 +356,7 @@ p {
     .carousel {
         height: 1400px;
     }
-}
+} */
 
 /* Hakkımızda-Slider */
 /* #ekipler {
