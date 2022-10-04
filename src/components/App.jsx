@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import Navbar from "./Navbar";
 import Duyurular from "./Duyurular.jsx";
 import Hakkımızda from "./Hakkımızda";

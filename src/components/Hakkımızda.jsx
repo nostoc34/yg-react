@@ -6,7 +6,7 @@ function Hakkımızda() {
       <h1 className="title">HAKKIMIZDA</h1>
       <div className="hak-kutu">
         <div className="about">
-          <div class="altbaslik">BİZ KİMİZ?</div>
+          <h1 class="altbaslik">BİZ KİMİZ?</h1>
           <p>
             Konya Teknik Üniversitesi yazılım Geliştirme Topluluğu, bilgisayar
             ve yazılım mühendisliği öğrencileri tarafından 2022'de kuruldu. Web
@@ -19,7 +19,7 @@ function Hakkımızda() {
         </div>
 
         <div className="about">
-          <div class="altbaslik">NE YAPARIZ?</div>
+          <h1 class="altbaslik">NE YAPARIZ?</h1>
           <p>
             Web ve mobil alanında ayrı ayrı olmak üzere çalışma grupları
             oluşturulmaktadır. Bu çalışma grupları ile bilgi birikimini
@@ -32,7 +32,7 @@ function Hakkımızda() {
         </div>
 
         <div className="about">
-          <div class="altbaslik">NEDEN BİZ?</div>
+          <h1 class="altbaslik">NEDEN BİZ?</h1>
           <p>
             Yazılım Geliştirme Topluluğu, gerek yazılım alanında kendinizi
             geliştirebileceğiniz gerekse sosyal anlamda güzel arkadaşlıklar

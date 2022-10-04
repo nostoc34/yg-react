@@ -5,7 +5,7 @@ import YGlogo from "../img/ygtnavbar.svg";
 function Navbar() {
     return (<div>
         <nav className="navbar navbar-expand-lg navbar-light" id="neubar">
-        <div className="container-fluid">
+        <div className="container">
             <a className="navbar-brand" href="#neubar"><img src={YGlogo} height="60" alt="yg-logo"/> <span style={{fontSize:"25px", fontWeight:"bolder"}}>YAZILIM GELİŞTİRME <br/>
                     TOPLULUĞU</span></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
