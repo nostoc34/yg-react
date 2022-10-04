@@ -420,14 +420,19 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #fff;
-    justify-content: center;
     align-items: center;
     padding: 2rem 16rem;
+    margin-top: 4rem;
 }
 
 .footer-logo {
     height: 200px;
     width: 200px;
+}
+
+.flogo-box {
+    display: flex;
+    justify-content: center;
 }
 
 .social-logo {
@@ -454,7 +459,7 @@ p {
 
 .footer-button {
     padding: 0.5rem;
-    border-radius: 25px;
+    border-radius: 0 25px 25px 0;
     background-color: #1D559F;
     color: #fff;
     border: none;
@@ -464,6 +469,37 @@ p {
     background-color: #ed4c20;
 }
 
+.footer-socials {
+    text-align: right;
+}
+
+.footer-links {
+    text-align: left;
+}
+
 .footer-socials h3 {
     color: #1D559F;
 }
+
+
+@media all and (max-width: 1270px) {
+    .f-social-title {
+        display: none;
+    }
+    .footer-logo {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media all and (max-width: 1030px) {
+    .f-social {
+        display: table-cell;
+    }
+
+    .footer-list-item {
+        font-size: 12px;
+    }
+}
+
+
