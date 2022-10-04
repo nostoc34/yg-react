@@ -28,7 +28,7 @@ body {
     align-items: flex-end;
     color: #1D559F;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
 }
 #neubar a:hover{
     color: #E14C24;
@@ -415,26 +415,55 @@ p {
 }
 
 /* Footer */
-#footer {
-    margin-top: 150px;
+
+.footer-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 16rem;
 }
 
-#footer .logo {
-    margin: 10px 0;
-    height: 175px;
+.footer-logo {
+    height: 200px;
+    width: 200px;
 }
 
-#footer .buton {
-    border-radius: 20px;
-    text-align: center;
+.social-logo {
+    height: 30px;
+    width: 30px;
 }
 
-#footer a {
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+.footer-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-list-item {
+    text-decoration: none;
     color: #1D559F;
 }
 
-#footer a:hover,
-.btn:hover {
-    color: #E14C24;
+.footer-list-item:hover {
+    color: #ed4c20;
+}
+
+.footer-button {
+    padding: 0.5rem;
+    border-radius: 25px;
+    background-color: #1D559F;
+    color: #fff;
+    border: none;
+}
+
+.footer-button:hover {
+    background-color: #ed4c20;
+}
+
+.footer-socials h3 {
+    color: #1D559F;
 }

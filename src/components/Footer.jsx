@@ -1,49 +1,91 @@
 import React from "react";
 import YGlogo from "../img/ygtnavbar.svg";
 import KTlogo from "../img/ktunlogo.png";
-
+import insta from "../img/square-instagram.svg";
+import twitter from "../img/twitter.svg";
+import linkedin from "../img/linkedin.svg";
+import discord from "../img/discord.svg";
 
 function Footer() {
-    return (<div id="footer">
-        <div className="container my-3">
-            <div className="row justify-content-evenly">
-                <div className="col-12 col-sm-3 ">
-                    <ul className="list-unstyled text-center ">
-                        <li><a href="#neubar" className="text-decoration-none">ANASAYFA</a></li>
-                        <li><a href="#hakkimizda" className="text-decoration-none">HAKKIMIZDA</a></li>
-                        <li><a href="#galeri" className="text-decoration-none">GALERİ</a></li>
-                        <li><a href="#iletisim" className="text-decoration-none">İLETİŞİM</a></li>
-                        <a target="blank" href="https://forms.gle/zjvPBFNmNASa9VHR9" className="text-decoration-none">
-                            <div className="border border-2 buton">
-                                <li>BİZE KATIL</li>
-                            </div>
-                        </a>
-                    </ul>
-                </div>
-                <div className="col-12 col-sm-3 text-center">
-                    <img src={YGlogo} alt="yazilimgelistirme" classNameName="logo img-fluid rounded-3"/>
-                </div>
-
-                <div className="col-12 col-sm-3 text-center">
-                    <img src={KTlogo} alt="KTÜN Logo" classNameName="logo"/>
-                </div>
-
-                <div className="col-12 col-sm-3 text-center">
-                    <h4 className=" mb-3">BİZİ TAKİP EDİN</h4>
-                    <ul className="list-unstyled ">
-                        <li><a href="https://www.instagram.com/ktun.yazilimgelistirme/?hl=tr" target="_blank" rel="noreferrer"
-                                className="text-decoration-none"><i className="bi bi-instagram"></i> @ktun.yazilimgelistirme</a>
-                        </li>
-                        <li><a href="https://twitter.com/KTUNYazilimGT" target="_blank" rel="noreferrer" className="text-decoration-none"><i
-                                    className="bi bi-twitter"></i> @KTUNYazilimGT</a></li>
-                        <li><a href="#" className="text-decoration-none"><i className="bi bi-linkedin"></i> yakında...</a></li>
-                        <li><a href="#" className="text-decoration-none"><i className="bi bi-discord"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+  return (
+    <section>
+      <div className="footer-box">
+        <div className="footer-links">
+          <ul className="footer-list">
+            <li>
+              <a className="footer-list-item" href="#neubar">
+                ANASAYFA
+              </a>
+            </li>
+            <li>
+              <a className="footer-list-item" href="#hakkimizda">
+                HAKKIMIZDA
+              </a>
+            </li>
+            <li>
+              <a className="footer-list-item" href="#galeri">
+                GALERİ
+              </a>
+            </li>
+            <li>
+              <a className="footer-list-item" href="#iletisim">
+                İLETİŞİM
+              </a>
+            </li>
+            <li>
+              <a
+                className="footer-link-item"
+                target="_blank"
+                rel="noreferrer"
+                href="https://forms.gle/zjvPBFNmNASa9VHR9"
+              >
+                <button className="footer-button">BİZE KATIL</button>
+              </a>
+            </li>
+          </ul>
         </div>
-    </div>)
+        <div>
+          <img alt="yg-logo" className="footer-logo" src={YGlogo} />
+        </div>
+        <div>
+          <img alt="ktun-logo" className="footer-logo" src={KTlogo} />
+        </div>
+        <div className="footer-socials">
+          <h3>Bizi Takip Edin!</h3>
+          <ul className="footer-list">
+            <li list>
+              <a className="footer-list-item" href="#">
+                <img className="social-logo" alt="insta-logo" src={insta} />{" "}
+                @ktun.yazilimgelistirme
+              </a>
+            </li>
+            <li>
+              <a className="footer-list-item" href="#">
+                <img className="social-logo" alt="twitter-logo" src={twitter} />{" "}
+                @KTUN.YazilimGT
+              </a>
+            </li>
+            <li>
+              <a className="footer-list-item" href="#">
+                <img
+                  className="social-logo"
+                  alt="linkedin-logo"
+                  src={linkedin}
+                />{" "}
+                @ktun.yazilimgelistirme
+              </a>
+            </li>
+            <li>
+              <a className="footer-list-item" href="#">
+                <img className="social-logo" alt="discord-logo" src={discord} />{" "}
+                Yazılım Geliştirme Topluluğu
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
 }
-
 
 export default Footer;
