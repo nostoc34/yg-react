@@ -13,27 +13,31 @@ function Yonetim3() {
       <h1 className="yon-title">Sosyal Medya Ekibi</h1>
       <div className="yon-box">
         <div className="yon-item">
-          <img className="yon-img" src={osman} />
+          <img className="yon-img" alt="profile" src={osman} />
           <p className="yon-title">Osman Can CEYLAN</p>
         </div>
         <div className="yon-item">
-          <img className="yon-img" src={irem} />
+          <img className="yon-img" alt="profile" src={irem} />
           <p className="yon-title">İrem DEMİR</p>
         </div>
         <div className="yon-item">
-          <img className="yon-img" src={saziye} />
+          <img className="yon-img" alt="profile" src={saziye} />
           <p className="yon-title">Şaziye DAĞ</p>
         </div>
         <div className="yon-item">
-          <img className="yon-img" src={muhammet} />
-          <p className="yon-title">Muhammet Sait YILMAZ</p>
+          <img className="yon-img" alt="profile" src={muhammet} />
+          <p className="yon-title">M. Sait YILMAZ</p>
         </div>
         <div className="yon-item">
-          <img className="yon-img" src={selim} />
+          <img className="yon-img" alt="profile" src={selim} />
           <p className="yon-title">Selim YAMAN</p>
         </div>
         <div className="yon-item">
-          <img className="yon-img" src={mehmet} />
+          <img className="yon-img" alt="profile" src={mehmet} />
+          <p className="yon-title">Mehmet KONUKÇU</p>
+        </div>
+        <div className="yon-item">
+          <img className="yon-img" alt="profile" src={mehmet} />
           <p className="yon-title">Mehmet KONUKÇU</p>
         </div>
       </div>

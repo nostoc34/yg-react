@@ -15,39 +15,39 @@ function Yonetim1() {
     <h1 className="yon-title">Yönetim Kurulu</h1>
     <div className="yon-box">
       <div className="yon-item">
-        <img className="yon-img" src={osman} />
+        <img className="yon-img" alt="profile" src={osman} />
         <p className="yon-title">Osman Can CEYLAN</p>
       </div>
       <div className="yon-item">
-        <img className="yon-img" src={sevinc} />
+        <img className="yon-img" alt="profile" src={sevinc} />
         <p className="yon-title">Sevinç TANIŞ</p>
       </div>
       <div className="yon-item">
-        <img className="yon-img" src={irem} />
+        <img className="yon-img" alt="profile" src={irem} />
         <p className="yon-title">İrem DEMİR</p>
       </div>
       <div className="yon-item">
-        <img className="yon-img" src={sezai} />
+        <img className="yon-img" alt="profile" src={sezai} />
         <p className="yon-title">Sezai Öztürk</p>
       </div>
       <div className="yon-item">
-        <img className="yon-img" src={ibrahim} />
+        <img className="yon-img" alt="profile" src={ibrahim} />
         <p className="yon-title">İbrahim DAĞCI</p>
       </div>
       <div className="yon-item">
-        <img className="yon-img" src={ilknur} />
+        <img className="yon-img" alt="profile" src={ilknur} />
         <p className="yon-title">İlknur DEMİRAL</p>
       </div>
       <div className="yon-item">
-        <img className="yon-img" src={saziye} />
+        <img className="yon-img" alt="profile" src={saziye} />
         <p className="yon-title">Şaziye DAĞ</p>
       </div>
       <div className="yon-item">
-        <img className="yon-img" src={seyda} />
+        <img className="yon-img" alt="profile" src={seyda} />
         <p className="yon-title">Şeyda AÇIKGÖZ</p>
       </div>
-      <div className="yon-item yon-last-item">
-        <img className="yon-img" src={esra} />
+      <div className="yon-item">
+        <img className="yon-img" alt="profile" src={esra} />
         <p className="yon-title">Esra TOSUN</p>
       </div>
     </div>

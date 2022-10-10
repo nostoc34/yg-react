@@ -5,6 +5,7 @@ import Hakkımızda from "./Hakkımızda";
 import Yonetim from "./Yonetim";
 import Footer from "./Footer";
 import Galeri from "./Galeri";
+import Iletisim from "./Iletisim";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Hakkımızda/>
     <Yonetim/>
     {/* <Galeri /> */}
+    {/* <Iletisim/> */}
     <Footer />
     </div>
   );
