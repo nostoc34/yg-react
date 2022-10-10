@@ -16,7 +16,7 @@ function DuyuruFrame(props) {
         <div
           className="modal fade"
           id={props.id}
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
@@ -47,6 +47,7 @@ function DuyuruFrame(props) {
   function createDuyuru(yeni) {
     return (
       <DuyuruFrame
+        key={yeni.id}
         id={yeni.id}
         target={yeni.target}
         header={yeni.header}

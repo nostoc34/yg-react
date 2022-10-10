@@ -121,7 +121,7 @@ body {
 
 
 
-.pages {
+.pages-box {
     display: flex;
     justify-content: center;
 }
@@ -140,11 +140,6 @@ body {
 }
 
 .page-btn:hover {
-    color: #fff;
-    background-color: #1d559fd7;
-}
-
-.page-btn:active {
     color: #fff;
     background-color: #1d559fd7;
 }
@@ -536,7 +531,7 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #fff;
     align-items: center;
-    padding: 2rem 16rem;
+    padding: 2rem 17rem;
     margin-top: 4rem;
 }
 
