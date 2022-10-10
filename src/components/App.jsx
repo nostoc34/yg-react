@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
     <Navbar/>
-    {/* <Duyurular/> */}
+    <Duyurular/>
     <Hakkımızda/>
     <Yonetim/>
     {/* <Galeri /> */}

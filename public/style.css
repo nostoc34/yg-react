@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
 
 body {
     background: linear-gradient(to top, #1D559F, #ed4c20);
@@ -72,6 +75,104 @@ body {
 
 /* Duyuru */
 
+.duyuru-container {
+    margin-top: 10rem;
+}
+
+.duyuru-col {
+    box-shadow: 0px 3px 8px #1d559fd7;
+    padding: 2rem;
+    margin: 1.8rem;
+    max-width: 600px;
+}
+
+@media screen and (max-width: 992px) {
+    .duyuru-col {
+        max-width: 660px;
+    }
+}
+
+
+
+.duyuru-row {
+    display: flex;
+    justify-content: center;
+}
+
+.duyuru-btn {
+    text-align: left;
+    margin: 0 0 2rem 0;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: solid 1px #1d559fd7;
+    box-shadow: 0px 3px 8px #1d559fd7;
+    color: #1d559fd7;
+    border-radius: 15px;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 100%);
+}
+
+.duyuru-btn:hover {
+    color: #fff;
+    background: #1d559fd7;
+    transition: all 0.3s;
+}
+
+
+
+.pages {
+    display: flex;
+    justify-content: center;
+}
+
+.page-btn {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #1d559fd7;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.page-btn:hover {
+    color: #fff;
+    background-color: #1d559fd7;
+}
+
+.page-btn:active {
+    color: #fff;
+    background-color: #1d559fd7;
+}
+
+
+.duyuru-katil {
+    padding: 4rem 3rem;
+}
+
+.katil-btn {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.duyuru-katil p {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.duyuru-baslik {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
 /* ___________________________ */
 /* Hakkımızda */
@@ -81,24 +182,20 @@ body {
     padding-top: 80px;
     color: #fff;
     letter-spacing: 5px;
-    margin-top: 150px;
+    margin-bottom: 3rem;
+}
+
+
+.hak-container {
     margin-bottom: 4rem;
 }
 
-
-.hak-kutu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 16rem;
-    gap: 2rem;
-    margin-bottom: 4rem;
+.hak-row {
+    display: flex;
+    justify-content: center;
 }
 
-@media all and (max-width: 1400px) {
-    .hak-kutu {
-        grid-template-columns: 1fr;
-    }
-}
+
 
 .about {
     padding: 2rem 4rem;
@@ -106,7 +203,18 @@ body {
     box-shadow: 0px 3px 8px #1d559fd7;
     color: #fff;
     text-align:center;
+    margin: 2rem 1rem;
+    max-width: 400px;
 }
+
+@media screen and (max-width: 992px) {
+    .about {
+        max-width: 660px;
+    }
+}
+
+
+
 
 
 .about:hover {
@@ -135,6 +243,7 @@ p {
 .yon-title {
     color: #fff;
     margin-bottom: 2rem;
+    margin-top: 0.5rem;
 }
 
 .yon-box {
@@ -156,8 +265,14 @@ p {
 }
 
 .yonetim {
-    margin: 1rem 16rem;
+    margin: 1rem 17rem;
     box-shadow: 0px 3px 8px #ed4c20;
+}
+
+@media screen and (max-width: 992px) {
+    .yonetim {
+        margin: 1rem 10rem;
+    }
 }
 
 .carousel-item {
