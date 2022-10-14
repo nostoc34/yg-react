@@ -15,7 +15,7 @@ function App() {
     <Hakkımızda/>
     <Yonetim/>
     {/* <Galeri /> */}
-    {/* <Iletisim/> */}
+    <Iletisim/>
     <Footer />
     </div>
   );

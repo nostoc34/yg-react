@@ -36,10 +36,6 @@ function Yonetim3() {
           <img className="yon-img" alt="profile" src={mehmet} />
           <p className="yon-title">Mehmet KONUKÇU</p>
         </div>
-        <div className="yon-item">
-          <img className="yon-img" alt="profile" src={mehmet} />
-          <p className="yon-title">Mehmet KONUKÇU</p>
-        </div>
       </div>
       </div>
     );

@@ -10,6 +10,7 @@ export default function Duyurular() {
 
   useEffect(deneme);
 
+
   function incPage() {
     if (page < lengthOfPages) {
       pageSet(page + 1);
