@@ -10,7 +10,6 @@ export default function Duyurular() {
 
   useEffect(deneme);
 
-
   function incPage() {
     if (page < lengthOfPages) {
       pageSet(page + 1);
@@ -71,7 +70,7 @@ export default function Duyurular() {
             <div
               id="carouselExampleIndicators"
               className="carousel slide"
-              data-bs-ride="true"
+              data-bs-interval="false"
             >
               <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -80,61 +79,60 @@ export default function Duyurular() {
                 <div className="carousel-item">{duyuru2.map(createDuyuru)}</div>
                 <div className="carousel-item">{duyuru3.map(createDuyuru)}</div>
               </div>
-
-              <div className="pages-box">
-                <button
-                  onClick={decPage}
-                  className="page-btn page-link"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev"
-                >
-                  <span aria-hidden="true">&laquo;</span>
-                </button>
-                <button
-                  id="p1"
-                  onClick={setPage}
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  className="page-btn pages"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                >
-                  1
-                </button>
-                <button
-                  id="p2"
-                  onClick={setPage}
-                  className="page-btn pages"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                >
-                  2
-                </button>
-                <button
-                  id="p3"
-                  onClick={setPage}
-                  className="page-btn pages"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                >
-                  3
-                </button>
-                <button
-                  onClick={incPage}
-                  className="page-btn page-link"
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next"
-                >
-                  <span aria-hidden="true">&raquo;</span>
-                </button>
-              </div>
+            </div>
+            <div className="pages-box deneme">
+              <button
+                onClick={decPage}
+                className="page-btn page-link"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span aria-hidden="true">&laquo;</span>
+              </button>
+              <button
+                id="p1"
+                onClick={setPage}
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                className="page-btn pages"
+                aria-current="true"
+                aria-label="Slide 1"
+              >
+                1
+              </button>
+              <button
+                id="p2"
+                onClick={setPage}
+                className="page-btn pages"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              >
+                2
+              </button>
+              <button
+                id="p3"
+                onClick={setPage}
+                className="page-btn pages"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              >
+                3
+              </button>
+              <button
+                onClick={incPage}
+                className="page-btn page-link"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span aria-hidden="true">&raquo;</span>
+              </button>
             </div>
           </div>
           <DuyuruKatil />

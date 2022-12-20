@@ -39,8 +39,8 @@ const Iletisim = () => {
     <section id="iletisim">
       <form ref={form} onSubmit={sendEmail}>
         <div className="container">
-          <h1 className="title">İLETİŞİM</h1>
           <div className="row iletisim-box">
+            <h1 className="title">İLETİŞİM</h1>
             <div className="col-lg-7 col-xs-12">
               <label className="iletisim-item ile-label">
                 Soru, Görüş ve Önerileriniz:

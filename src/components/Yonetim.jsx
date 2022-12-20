@@ -11,7 +11,7 @@ function Yonetim() {
           <div
             id="carouselExampleIndicatorss"
             className="carousel slide"
-            data-bs-ride="true"
+            data-bs-interval="false"
           >
             <div className="carousel-indicators">
               <button

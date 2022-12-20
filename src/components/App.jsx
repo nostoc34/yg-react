@@ -5,16 +5,19 @@ import Hakkımızda from "./Hakkımızda";
 import Yonetim from "./Yonetim";
 import Footer from "./Footer";
 import Galeri from "./Galeri";
+// import Galeri2 from "./Galeri2";
+// import Galeri3 from "./Galeri3";
 import Iletisim from "./Iletisim";
 
 function App() {
   return (
     <div>
     <Navbar/>
+    {/* <Banner/> */}
     <Duyurular/>
     <Hakkımızda/>
     <Yonetim/>
-    {/* <Galeri /> */}
+    <Galeri/>
     <Iletisim/>
     <Footer />
     </div>
