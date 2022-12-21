@@ -1,10 +1,9 @@
 import React, { useState, useRef } from 'react';
-import { createRoot } from 'react-dom/client';
+import { GalFrontFrame, GaleriFrame2 } from './GaleriFrame2';
 import { Container, Button, Alert } from 'react-bootstrap';
 import { CSSTransition } from 'react-transition-group';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
 
 function Galeri2() {
   const [showButton, setShowButton] = useState(true);
@@ -13,12 +12,12 @@ function Galeri2() {
   return (
     <Container style={{ paddingTop: '2rem' }}>
       {showButton && (
-        <Button
+        <button
           onClick={() => setShowMessage(true)}
           size="lg"
         >
           Show Message
-        </Button>
+        </button>
       )}
       <CSSTransition
         in={showMessage}
@@ -29,7 +28,7 @@ function Galeri2() {
         onEnter={() => setShowButton(false)}
         onExited={() => setShowButton(true)}
       >
-        <div
+        <Alert
           ref={nodeRef}
           variant="primary"
           dismissible
@@ -48,7 +47,7 @@ function Galeri2() {
           >
             Close
           </Button>
-        </div>
+        </Alert>
       </CSSTransition>
     </Container>
   );

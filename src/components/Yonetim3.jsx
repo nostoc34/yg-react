@@ -6,10 +6,9 @@ import muhammet from "../img/profile/muhammet.jpeg";
 import selim from "../img/profile/selim.jpg";
 import mehmet from "../img/profile/mehmet.png";
 
-
 function Yonetim3() {
-    return (
-      <div>
+  return (
+    <div>
       <h1 className="yon-title">Sosyal Medya Ekibi</h1>
       <div className="yon-box">
         <div className="yon-item">
@@ -37,8 +36,8 @@ function Yonetim3() {
           <p className="yon-title">Mehmet KONUKÇU</p>
         </div>
       </div>
-      </div>
-    );
-  }
-  
-  export default Yonetim3;
+    </div>
+  );
+}
+
+export default Yonetim3;

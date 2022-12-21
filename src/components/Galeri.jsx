@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { CSSTransition } from "react-transition-group";
 import GaleriFrame from "./GaleriFrame";
 import ct1_1 from "../img/galeri/ct1_1.jpeg";
 import ct1_2 from "../img/galeri/ct1_2.jpeg";

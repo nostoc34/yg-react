@@ -3,7 +3,7 @@ import React from "react";
 function GaleriFrame(props) {
   return (
     <div className="hamidi">
-      <div className="anaresim col-10" onClick={props.openFunction}>
+      <button className="anaresim col-10" onClick={props.openFunction}>
         <img src={props.resim} alt="galeri" />
         <div id={props.id2} className="content">
           <h4>{props.header}</h4>
@@ -11,7 +11,7 @@ function GaleriFrame(props) {
           <br />
           <span>{props.laf}</span>
         </div>
-      </div>
+      </button>
 
       <div
         style={{ display: "none" }}

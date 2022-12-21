@@ -21,6 +21,7 @@ function GaleriFrame2(props) {
       className="carousel slide col-10 galeri-slider"
       data-bs-ride="true"
     >
+    <button className="galeri-btn">X</button>
       <div className="carousel-indicators">
         <button
           type="button"

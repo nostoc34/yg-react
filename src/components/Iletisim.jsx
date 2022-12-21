@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { CSSTransition } from "react-transition-group";
 
 const Iletisim = () => {
-  const [isSubmited, setSubmited] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
+  const nodeRef = useRef(null);
 
   const form = useRef();
 
@@ -31,7 +33,6 @@ const Iletisim = () => {
         }
       );
 
-    setSubmited(true);
     clearForm();
   };
 
@@ -68,14 +69,21 @@ const Iletisim = () => {
                 name="user_email"
               />
               <input
+                onClick={() => setShowMessage(true)}
                 className="iletisim-item ile-btn"
                 type="submit"
                 value="Gönder"
               />
             </div>
-            <h5 style={{ visibility: isSubmited ? "visible" : "hidden" }}>
-              Bizimle iletişime geçtiğiniz için teşekkür ederiz.
-            </h5>
+            <CSSTransition
+              in={showMessage}
+              nodeRef={nodeRef}
+              timeout={300}
+              classNames="fade"
+              unmountOnExit
+            >
+              <h5 ref={nodeRef}>Bizimle iletişime geçtiğiniz için teşekkür ederiz.</h5>
+            </CSSTransition>
           </div>
         </div>
       </form>
