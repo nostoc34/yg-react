@@ -8,7 +8,7 @@ export default function Duyurular() {
   var lengthOfPages = 3;
   console.log(page);
 
-  useEffect(deneme);
+  // useEffect(deneme);
 
   function incPage() {
     if (page < lengthOfPages) {
@@ -34,32 +34,32 @@ export default function Duyurular() {
     pageSet(crPage);
     console.log(page);
   }
-  function deneme() {
-    if (page === 1) {
-      for (var i = 0; i < document.querySelectorAll(".pages").length; i++) {
-        document.querySelectorAll(".pages")[i].style.color = "#1d559fd7";
-        document.querySelectorAll(".pages")[i].style.backgroundColor = "#fff";
-      }
-      document.getElementById("p1").style.color = "#fff";
-      document.getElementById("p1").style.backgroundColor = "#1d559fd7";
-    }
-    if (page === 2) {
-      for (var i = 0; i < document.querySelectorAll(".pages").length; i++) {
-        document.querySelectorAll(".pages")[i].style.color = "#1d559fd7";
-        document.querySelectorAll(".pages")[i].style.backgroundColor = "#fff";
-      }
-      document.getElementById("p2").style.color = "#fff";
-      document.getElementById("p2").style.backgroundColor = "#1d559fd7";
-    }
-    if (page === 3) {
-      for (var i = 0; i < document.querySelectorAll(".pages").length; i++) {
-        document.querySelectorAll(".pages")[i].style.color = "#1d559fd7";
-        document.querySelectorAll(".pages")[i].style.backgroundColor = "#fff";
-      }
-      document.getElementById("p3").style.color = "#fff";
-      document.getElementById("p3").style.backgroundColor = "#1d559fd7";
-    }
-  }
+  // function deneme() {
+  //   if (page === 1) {
+  //     for (var i = 0; i < document.querySelectorAll(".pages").length; i++) {
+  //       document.querySelectorAll(".pages")[i].style.color = "#1d559fd7";
+  //       document.querySelectorAll(".pages")[i].style.backgroundColor = "#fff";
+  //     }
+  //     document.getElementById("p1").style.color = "#fff";
+  //     document.getElementById("p1").style.backgroundColor = "#1d559fd7";
+  //   }
+  //   if (page === 2) {
+  //     for (var i = 0; i < document.querySelectorAll(".pages").length; i++) {
+  //       document.querySelectorAll(".pages")[i].style.color = "#1d559fd7";
+  //       document.querySelectorAll(".pages")[i].style.backgroundColor = "#fff";
+  //     }
+  //     document.getElementById("p2").style.color = "#fff";
+  //     document.getElementById("p2").style.backgroundColor = "#1d559fd7";
+  //   }
+  //   if (page === 3) {
+  //     for (var i = 0; i < document.querySelectorAll(".pages").length; i++) {
+  //       document.querySelectorAll(".pages")[i].style.color = "#1d559fd7";
+  //       document.querySelectorAll(".pages")[i].style.backgroundColor = "#fff";
+  //     }
+  //     document.getElementById("p3").style.color = "#fff";
+  //     document.getElementById("p3").style.backgroundColor = "#1d559fd7";
+  //   }
+  // }
 
   return (
     <section id="duyurular">
