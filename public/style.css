@@ -89,6 +89,10 @@ body {
     flex-direction: column;
 }
 
+.duyuru-img {
+    height: 350px;
+}
+
 
 @media screen and (max-width: 992px) {
     .duyuru-col {
@@ -261,15 +265,28 @@ p {
     margin-top: 0.5rem;
 }
 
-.yon-box {
+/* .yon-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+} */
+
+.yon-box {
+    display: flex;
+    justify-content:space-evenly;
+    
 }
 
+.yon-big-box {
+    height: 600px;
+    display: grid;
+    align-items: center;
+}
 .yon-item {
     justify-content: center;
     align-items: center;
+    height: 200px;
+    width: 200px;
 }
 
 .yon-img {

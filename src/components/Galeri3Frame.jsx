@@ -17,7 +17,6 @@ function Galeri3Frame(props) {
             <h4>{props.header}</h4>
             <span>{props.tarih}</span> <br />
             <br />
-            <span>{props.laf}</span>
           </div>
         </button>
       )}

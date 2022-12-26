@@ -1,7 +1,10 @@
 import React from "react";
 import Yonetim1 from "./Yonetim1";
 import Yonetim2 from "./Yonetim2";
-import Yonetim3 from "./Yonetim3";
+import SosyalMedya from "./SosyalMedya";
+import Tasarim from "./Tasarim";
+import Organizasyon from "./Organizayson";
+import Sponsorluk from "./Sponsorluk";
 
 function Yonetim() {
   return (
@@ -34,6 +37,24 @@ function Yonetim() {
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicatorss"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicatorss"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicatorss"
+                data-bs-slide-to="5"
+                aria-label="Slide 6"
+              ></button>
             </div>
             <div className="carousel-inner">
               <div className="carousel-item active">
@@ -43,7 +64,16 @@ function Yonetim() {
                 <Yonetim2 />
               </div>
               <div className="carousel-item">
-                <Yonetim3 />
+                <SosyalMedya />
+              </div>
+              <div className="carousel-item">
+                <Tasarim />
+              </div>
+              <div className="carousel-item">
+                <Organizasyon />
+              </div>
+              <div className="carousel-item">
+                <Sponsorluk />
               </div>
             </div>
             <button

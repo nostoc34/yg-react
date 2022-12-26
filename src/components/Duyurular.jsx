@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import createDuyuru from "./DuyuruFrame";
 import DuyuruKatil from "./DuyuruKatil";
-import { duyuru1, duyuru2, duyuru3 } from "./duyuru";
+import { duyuru1 } from "./duyuru";
 
 export default function Duyurular() {
   const [page, pageSet] = useState(1);
@@ -76,8 +76,8 @@ export default function Duyurular() {
                 <div className="carousel-item active">
                   {duyuru1.map(createDuyuru)}
                 </div>
-                <div className="carousel-item">{duyuru2.map(createDuyuru)}</div>
-                <div className="carousel-item">{duyuru3.map(createDuyuru)}</div>
+                {/* <div className="carousel-item">{duyuru2.map(createDuyuru)}</div>
+                <div className="carousel-item">{duyuru3.map(createDuyuru)}</div> */}
               </div>
             </div>
             <div className="pages-box deneme">
@@ -102,7 +102,7 @@ export default function Duyurular() {
               >
                 1
               </button>
-              <button
+              {/* <button
                 id="p2"
                 onClick={setPage}
                 className="page-btn pages"
@@ -123,7 +123,7 @@ export default function Duyurular() {
                 aria-label="Slide 3"
               >
                 3
-              </button>
+              </button> */}
               <button
                 onClick={incPage}
                 className="page-btn page-link"
