@@ -43,7 +43,7 @@ function DuyuruFrame(props) {
                 🧐 Developer İmajı <br />
                 💸 Yazılım Sektöründe Para Kazanmak <br />
                 💡 Yatırım Sermaye ve İş Kurma <br />
-                🖥️ Dev. Ops. <br />
+                🖥️ Dev. Ops. <br /><br />
                 "Nasıl para kazanacağım?, Öğrenciyken nasıl sektöre
                 girebilirim?, İş başvurularında nelere dikkat etmeliyim?" gibi
                 soruların cevaplarını ve çok daha fazlasını bu etkinlikte
