@@ -13,14 +13,12 @@ function Tasarim() {
             <img className="yon-img" alt="profile" src={osman} />
             <p className="yon-title">Osman CEYLAN</p>
           </div>
-        </div>
-        <div className="yon-box">
+
           <div className="yon-item">
             <img className="yon-img" alt="profile" src={irem} />
             <p className="yon-title">İrem DEMİR</p>
           </div>
-        </div>
-        <div className="yon-box">
+
           <div className="yon-item">
             <img className="yon-img" alt="profile" src={sevinc} />
             <p className="yon-title">Sevinç TANIŞ</p>
