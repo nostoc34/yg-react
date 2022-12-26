@@ -2,24 +2,27 @@ import React, { useState, useRef } from "react";
 import { CSSTransition } from "react-transition-group";
 
 function Galeri3Frame(props) {
-  const [showButton, setShowButton] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
   const nodeRef = useRef(null);
+  if(props.activeImage !== null && props.activeImage !== props.id) {
+    return null;
+  }
   return (
     <div className="hamidi">
-      {showButton && (
-        <button
-          className="anaresim col-10"
-          onClick={() => setShowMessage(true)}
-        >
-          <img src={props.resim} alt="galeri" />
-          <div id={props.id2} className="content">
-            <h4>{props.header}</h4>
-            <span>{props.tarih}</span> <br />
-            <br />
-          </div>
-        </button>
-      )}
+      
+      {
+        props.activeImage === null && <button
+        className="anaresim col-10"
+        onClick={() => setShowMessage(true)}
+      >
+        <img src={props.resim} alt="galeri" />
+        <div id={props.id2} className="content">
+          <h4>{props.header}</h4>
+          <span>{props.tarih}</span> <br />
+          <br />
+        </div>
+      </button>
+      }
 
       <CSSTransition
         in={showMessage}
@@ -27,8 +30,8 @@ function Galeri3Frame(props) {
         timeout={300}
         classNames="fade"
         unmountOnExit
-        onEnter={() => setShowButton(false)}
-        onExited={() => setShowButton(true)}
+        onEnter={() => props.setActiveImage(props.id)}
+        onExited={() => props.setActiveImage(null)}
       >
         <div
           className="col-10 galeri-slider"

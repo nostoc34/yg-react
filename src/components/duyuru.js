@@ -3,7 +3,7 @@ const duyuru1 = [
         id : "modal1",
         target: "#modal1",
         header : "26 Ara | Code Adı: Para",
-        para : "Yazılım Geliştirme Topluluğu olarak sponsorumuz NİBGAT ile gerçekleştireceğimiz, dönemin son etkinliği ile karşınızdayız. Ele alacağımız konular: 🧐 Developer İmajı 💸 Yazılım Sektöründe Para Kazanmak 💡 Yatırım Sermaye ve İş Kurma 🖥️ Dev. Ops."
+        para : `Yazılım Geliştirme Topluluğu olarak sponsorumuz NİBGAT ile gerçekleştireceğimiz, dönemin son etkinliği ile karşınızdayız. Ele alacağımız konular: 🧐 Developer İmajı 💸 Yazılım Sektöründe Para Kazanmak 💡 Yatırım Sermaye ve İş Kurma 🖥️ Dev. Ops.`
     }
     // {
     //     id : "modal2",
