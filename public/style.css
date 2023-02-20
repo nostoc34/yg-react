@@ -89,8 +89,25 @@ body {
     flex-direction: column;
 }
 
-.duyuru-img {
-    height: 350px;
+.modal-img {
+    height: 500px;
+    margin-bottom: 3rem;
+}
+
+.modal-link {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: #ed4c20;
+}
+.modal-link:hover {
+    color: #1d559fd7;
+}
+
+.modal-para {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
 }
 
 

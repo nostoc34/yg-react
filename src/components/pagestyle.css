@@ -1,0 +1,54 @@
+.pageNumbers {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.pageNumbers li {
+  padding: 10px;
+  cursor: pointer;
+  color: #1d559fd7;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  font-weight: bold;
+}
+
+.pageNumbers li.active {
+  color: #fff;
+  background-color: #1d559fd7;
+}
+
+.pageNumbers li:hover {
+  color: #fff;
+  background-color: #1d559fd7;
+}
+
+.pageNumbers li button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.pageNumbers li button:hover {
+  background-color: white;
+  color: black;
+}
+.pageNumbers li button:focus {
+  outline: none;
+}
+
+.loadmore {
+  padding: 1rem;
+  background-color: transparent;
+
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.modal-body {
+  text-align: center;
+}

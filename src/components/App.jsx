@@ -4,7 +4,7 @@ import Duyurular from "./Duyurular.jsx";
 import Hakkımızda from "./Hakkımızda";
 import Yonetim from "./Yonetim";
 import Footer from "./Footer";
-import Galeri3 from "./Galeri3";
+import Galeri from "./Galeri";
 import Iletisim from "./Iletisim";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <Duyurular/>
     <Hakkımızda/>
     <Yonetim/>
-    <Galeri3/>
+    <Galeri/>
     <Iletisim/>
     <Footer />
     </div>

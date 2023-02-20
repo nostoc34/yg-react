@@ -1,5 +1,4 @@
 import React from "react";
-import codeadipara from "../img/duyuru/codeadipara.jpeg";
 
 function DuyuruFrame(props) {
   return (
@@ -34,28 +33,11 @@ function DuyuruFrame(props) {
               ></button>
             </div>
             <div className="modal-body">
-              <img className="duyuru-img" src={codeadipara} />
-              <p>
-                Yazılım Geliştirme Topluluğu olarak sponsorumuz NİBGAT ile
-                gerçekleştireceğimiz, dönemin son etkinliği ile karşınızdayız.
-                <br /> <br />
-                Ele alacağımız konular: <br />
-                🧐 Developer İmajı <br />
-                💸 Yazılım Sektöründe Para Kazanmak <br />
-                💡 Yatırım Sermaye ve İş Kurma <br />
-                🖥️ Dev. Ops. <br /><br />
-                "Nasıl para kazanacağım?, Öğrenciyken nasıl sektöre
-                girebilirim?, İş başvurularında nelere dikkat etmeliyim?" gibi
-                soruların cevaplarını ve çok daha fazlasını bu etkinlikte
-                bulacaksın! <br /><br />
-                📆 Tarih : 26 Aralık Pazartesi
-                <br />
-                🕒 Saat : 15.00
-                <br />
-                📍 Yer : Halil Cin Konferans Salonu
-                <br />
-                <a target="_blank" href="https://forms.gle/Bb5Sn4P6dA62trEr7" >Katılım Formu</a> 
+              <img className="modal-img" src={props.img} />
+              <p className="modal-para">
+                {props.para}
               </p>
+              <a className="modal-link" target="_blank" href={props.linkURL} >{props.link}</a>
             </div>
           </div>
         </div>
@@ -71,9 +53,19 @@ function createDuyuru(yeni) {
       id={yeni.id}
       target={yeni.target}
       header={yeni.header}
+      img={yeni.img}
       para={yeni.para}
+      link={yeni.link}
+      linkURL={yeni.linkURL}
     />
   );
 }
 
 export default createDuyuru;
+
+
+
+
+
+
+{/* <a target="_blank" href="https://forms.gle/Bb5Sn4P6dA62trEr7" >Katılım Formu</a>  */}
